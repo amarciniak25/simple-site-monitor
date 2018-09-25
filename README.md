@@ -11,7 +11,7 @@ ruby simple-site-monitor.rb --site=https://google.com --pattern=body --log=log.c
 I use a cron job to run the program every five min.
 
 ### Example cron Line
-*/5 * * * * /usr/bin/ruby ~/simple-site-monitor/simple-site-monitor.rb --site=https://google.com --pattern=body --log=google.csv
+*/5 * * * * /usr/bin/ruby ~/simple-site-monitor/simple-site-monitor.rb --site=https://google.com --pattern=body --log=google-uptime.csv
 
 ## Background
 We needed a method for monitoring uptime of a mission critical app that is hosted on the internal network. Uptime monitoting services would not work because the app is only accessable from the inside.
